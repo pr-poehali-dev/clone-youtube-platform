@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Verify token endpoint",
+      "method": "POST",
+      "body": {
+        "action": "verify_token",
+        "token": "invalid_token"
+      },
+      "expectedStatus": 401,
+      "bodyMatcher": "partial"
+    }
+  ]
+}
